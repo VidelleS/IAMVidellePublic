@@ -1,0 +1,638 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+
+/* <!---------------------------------------- Home Page ----------------------------------------> */
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size:100% 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3), transparent), url(../IAmVidelleSita.github.io/images/splash2-HQ.png);
+    background-repeat: no-repeat;
+    background-position:center center;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.profile-text-container{
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    /* background-color: aliceblue; */
+
+    
+
+}
+.container-background{
+    /* transform: translate(0%, 175%); */
+    /* width: 12%; */
+    width: 200px;
+    height: 200px;
+    /* height: 20%; */
+    position: relative;
+    margin: auto;
+    left: 1%; 
+    top: 38%;
+    background-image: linear-gradient(white,transparent,black,transparent,black,white);
+    z-index: 2;
+    border-radius: 100% 100%;
+}
+@media screen and (min-width:52em) {
+    .container-background   {
+        left: 1.5%;
+    }
+}
+.container-image{
+    width: 100%;
+    height: 100%;
+    background-image: url(../IAmVidelleSita.github.io/images/Me3-HQ.png) ;
+    /* background-size:95% 95%; */
+    background-size:190px 190px;
+    background-repeat: no-repeat;
+    background-position:center bottom;
+    border-radius: 100% 100%;
+
+    z-index: 1;
+}
+.logo{
+    width: 100px;
+    position: relative;
+    bottom: 10px;
+}
+
+/* Text */
+.container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 45%;
+
+    
+    /* bottom: 25% */
+}
+    .container .hero-text{
+        position: relative;
+    }
+.container .hero-text p{
+    color:white;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 20px 0px 20px;
+}
+.container .hero-text h1{
+    color:white;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 20px 0px 20px;
+}
+.typed{
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+}
+span{
+    color: white;
+}
+/* .container .hero-text h3{
+    color:white;
+    font-weight: 400;
+    font-size: 17px;
+
+} */
+
+/* Navigation Headings */
+.nav-bar{
+    background:transparent;
+    position: fixed;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0,0,0,0.6);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.nav-bar ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 2% 25px;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    position: relative;
+
+}
+.nav-bar ul li a::after{
+content: '';
+width: 0%;
+height: 15%;
+background-color: turquoise;
+position: absolute;
+left: 0;
+bottom: -30.5%;
+transition: .5s;
+}
+.nav-bar ul li a:hover::after{
+width: 100%;
+}
+
+/* Navigation Icons */
+.nav-bar div a{
+    color: turquoise;
+    font-size:xx-large ;
+}
+
+.nav-bar div a:hover{
+    color:purple;
+    transition: .4s;
+}
+
+
+
+
+/* <!---------------------------------------- Portfolio Page ----------------------------------------> */
+
+#portfolio{
+    padding: 2%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background: linear-gradient(black,black,turquoise,black);
+    /* background-color: yellow; */
+}
+.projects-section{
+    position: relative;
+    margin: auto;
+    width: 90%;
+    height: 78%;
+    top: 5%;
+    /* padding-block: 10rem; */
+    z-index: 1;  
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-rows: 0.25fr 3.75fr;
+}
+.projects-title, .skills-title{
+    color: white;
+    /* background-color: aliceblue; */
+    z-index: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.iphone{
+    width: 100%;
+    height: 100%;
+    background-image: url(../IAmVidelleSita.github.io/images/iphone-HR-resize.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    position: relative;
+    bottom: 98%;
+    z-index: 2;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* background-color: rebeccapurple; */
+    
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+    /* background-color: blueviolet; */
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006); */
+}
+.card-container-1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../IAmVidelleSita.github.io/images/portfolio-card-rpac-red.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+.card-container-2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../IAmVidelleSita.github.io/images/portfolio-card-website.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+.card-container-3 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../IAmVidelleSita.github.io/images/portfolio-card-rpac-white.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+.card-container-4 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../IAmVidelleSita.github.io/images/portfolio-card-rpac-black.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+
+/* <!---------------------------------------- Skills Page ----------------------------------------> */
+
+#skills {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(black,black, turquoise,black);
+    display: flex;
+    overflow: auto;
+    padding: 2%;
+}
+.skills-section{
+    position: relative;
+    margin: auto;
+    width: 90%;
+    max-height: 78%;
+    /* height: 73%; */
+    top: 5%;
+    z-index: 1;  
+    /* background-color: goldenrod; */
+    overflow:auto;
+
+}
+.skills-grid{
+    height: 100%;
+    /* width: 100%; */
+    /* background-color: aliceblue; */
+    padding-block: 1rem;
+                    /* display: grid; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+                    /* grid-auto-flow: row; */
+
+}
+.skills-grid > * {
+    flex: 1 1 22.2em;
+}
+.skill-column{
+    /* background-color: black; */
+    background-image: linear-gradient(transparent,turquoise,black,black,transparent, black,black,transparent);
+    border: 5px solid transparent;
+    border-radius: 0.5rem;
+
+    padding: 15px 25px;
+    /* height: 600px; */
+    width: min(100%);
+    /* align-items: center;
+    justify-content: center;
+ */
+
+}
+.skill-icon{
+    /* background-color: turquoise; */
+    text-align: center;
+    /* border: 5px solid white ;
+    border-radius: 5rem; */
+    padding: 15px 25px;
+
+}
+.skill-column i{
+    color: black;
+    /* height: ; */
+    font-size: xx-large;
+    
+}
+.skill-column p{
+    padding: 15px 25px;
+
+    
+}
+.skills-text-box{
+    /* width: 100%;
+    height: 100%; */
+    /* height: fit-content; */
+    /* margin: auto; */
+    padding: 2%;
+    background-color: white;
+    /* border: 5px solid ; */
+    border-radius: 0.5rem;
+    
+}
+
+.skills-text-box h3{
+    text-align: center;
+}
+.language-logo-1{
+    min-width: 45px;
+    height: 45px;
+    /* background-color: black; */
+    background-image: url(../IAmVidelleSita.github.io/images/Logo-Java.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 1%;
+
+}
+.language-logo-2{
+    min-width: 45px;
+    height: 45px;
+    /* background-color: black; */
+    background-image: url(../IAmVidelleSita.github.io/images/Logo-Dart.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 1%;
+
+
+}
+.language-logo-3{
+    min-width: 45px;
+    height: 45px;
+    /* background-color: black; */
+    background-image: url(../IAmVidelleSita.github.io/images/Logo-Flutter.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 1%;
+
+
+}
+.language-logo-4{
+    min-width: 45px;
+    height: 45px;
+    /* background-color: black; */
+    background-image: url(../IAmVidelleSita.github.io/images/Logo-CSS.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 1%;
+
+
+}
+.language-logo-5{
+    min-width: 45px;
+    height: 45px;
+    /* background-color: black; */
+    background-image: url(../IAmVidelleSita.github.io/images/Logo-HTML.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 1%;
+
+
+}
+.language-logo-6{
+    min-width: 45px;
+    height: 45px;
+    /* background-color: black; */
+    background-image: url(../IAmVidelleSita.github.io/images/Logo-VSCODE.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 1%;
+
+
+}
+.language-logo-7{
+    min-width: 45px;
+    height: 45px;
+    /* background-color: black; */
+    background-image: url(../IAmVidelleSita.github.io/images/Logo-MATLAB.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 1%;
+
+
+}
+.language-logo-8{
+    min-width: 45px;
+    height: 45px;
+    /* background-color: black; */
+    background-image: url(../IAmVidelleSita.github.io/images/Logo-SolidWorks.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 1%;
+
+
+}
+.language-logo-9{
+    min-width: 45px;
+    height: 45px;
+    /* background-color: black; */
+    background-image: url(../IAmVidelleSita.github.io/images/Logo-Photoshop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 1%;
+
+}
+
+
+/* <!---------------------------------------- Contact Me Page ----------------------------------------> */
+#contact-me{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(black,black, turquoise,black);
+    display: flex;
+    /* overflow: auto; */
+    padding: 2%;
+}
+.contact-section{
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: auto;    */
+}
+.contact-me-content{
+    max-height: 78%;
+    width: 80%;
+    /* background-color: aliceblue; */
+    position: relative;
+    top: 5%;
+    /* overflow:visible; */
+
+    /* display: flex;
+    flex-direction: column; */
+    /* display: grid;
+    grid-template-rows: 1fr 3fr; */
+    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* overflow: auto; */
+}
+
+/* .contact-me-wraper{
+    width: 100%;
+    background-color: crimson;
+    display: flex;
+    align-content: center;
+
+} */
+.contact-me-container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 1.5rem; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: blueviolet; */
+    overflow-y:visible;
+}
+.contact-me-container > * {
+    flex: 1 1 22.2em;
+}
+.contact-me-content h1{
+    color: white;
+    /* background-color: green; */
+}
+.contact-me-content p{
+    font-weight: 300;
+    color: white;
+    /* background-color: blue; */
+}
+.contact-information{
+    width: 50%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 1rem; */
+
+}
+.contact-information .box{
+    position: relative;
+    padding: 18px 0px;
+    display: flex;
+}
+.contact-information .box .contact-icon{
+    min-width: 45px;
+    height: 45px;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.contact-information .box .contact-icon i{
+    font-size: medium;
+}
+.contact-information .box .contact-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px;
+    font-size: 16px;
+    color: white;
+}
+.contact-information .box .contact-text h2{
+    font-size: large;
+    font-weight: 500;
+    color: white;
+} 
+.contact-form{
+    width: 40%;
+    height: 100%;
+    padding: 38px;
+    /* background-color: antiquewhite; */
+    /* background-image: linear-gradient(transparent,gray,gray,gray,gray,gray,gray,transparent); */
+    background-image: linear-gradient(transparent,white,white,white,white,white,white,transparent); 
+    /* background-image: linear-gradient(transparent,black,black,black,black,black,black,transparent); */
+
+}
+.contact-form h2{
+    font-size: 30px;
+    /* color: white; */
+    color: black;
+    font-weight: 500;
+}
+.contact-form .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 8px;
+
+}
+.contact-form .inputBox input,
+.contact-form .inputBox textarea
+{
+    position: relative;
+    width: 100%;
+    padding: 3px 0px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    margin: 8px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: gray;
+
+}
+.contact-form .inputBox input:focus ~ span,
+.contact-form .inputBox input:valid ~ span,
+.contact-form .inputBox textarea:focus ~ span,
+.contact-form .inputBox textarea:valid ~ span
+{
+font-size: 12px;
+transform: translateY(-20px);
+}
+.contact-form .inputBox input[type="submit"]{
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 18px;
+    background-image: linear-gradient(transparent,white,transparent);
+    color:black
+}
+
+
+
